@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 2</title>
+    <style>
+        body{
+            background: #4ac29a4d;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #bdfff375, #4ac29a4d);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #bdfff350, #4ac29a54),url(imagen/logo\ \(2\).jpeg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-position: right;
+            background-position: right;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: hidden;
+            height: 800px;
+        }
+        table{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1 style="color: black;"><b>Ejercicio 2 del uso del ciclo FOR <br> Estructuras repetitivas</b></h1>
+    <hr size="5" color="violet">
+    <br>
+    <table  border="5"> 
+        
+        <th><b>Números</b></th><th><b>Valor Letras</b></th><th><b>valor inglés</b></th>
+        <tbody id="cuerpo">
+
+        </tbody>
+        </table>
+        <script>
+             var salida='';
+            var num=parseInt(prompt("DIGITE UN NUMERO ENTRE 1 Y 20", ""));
+        for(var i=1; i<=20; i++){
+            
+                  salida+='<tr><td>'+i+'</td><td>'+letras(i)+'</td><td>'+letrasinglés(i)+'</td></tr>';
+        }
+                document.getElementById('cuerpo').innerHTML=salida;
+
+                function letras(num){
+                    switch (num){
+                        case 0:letra='Cero'; break;
+                        case 1:letra='Uno'; break; 
+                        case 2:letra='Dos'; break;
+                        case 3:letra='Tres';  break;
+                        case 4:letra='Cuatro'; break;
+                        case 5:letra='Cinco'; break;
+                        case 6:letra='Seis'; break;
+                        case 7:letra='Siete'; break;
+                        case 8:letra='Ocho'; break;
+                        case 9:letra='Nueve'; break;
+                        case 10:letra='Diez'; break;
+                        case 11:letra='Once'; break;
+                        case 12:letra='Doce'; break;
+                        case 13:letra='Trece'; break;
+                        case 14:letra='Catorce'; break;
+                        case 15:letra='Quince'; break;
+                        case 16:letra='dieciséis'; break; 
+                        case 17:letra='diecisiete'; break;
+                        case 18:letra='dieciocho';  break;
+                        case 19:letra='diecinueve'; break;
+                        case 20:letra='veinte'; break;
+                    }
+                     return letra;  
+                    
+                }   
+                function letrasinglés(num){
+                    switch (num){
+                        case 0:letra='Cero'; break;
+                        case 1:letra='One'; break; 
+                        case 2:letra='Two'; break;
+                        case 3:letra='Three';  break;
+                        case 4:letra='Four'; break;
+                        case 5:letra='Five'; break;
+                        case 6:letra='Six'; break;
+                        case 7:letra='Seven'; break;
+                        case 8:letra='Eight'; break;
+                        case 9:letra='Nine'; break;
+                        case 10:letra='Ten'; break;
+                        case 11:letra='Eleven'; break;
+                        case 12:letra='Twelve'; break;
+                        case 13:letra='Thirteen'; break;
+                        case 14:letra='Tourteen'; break;
+                        case 15:letra='Fifteen'; break;   
+                        case 16:letra='sixteen'; break; 
+                        case 17:letra='seventeen'; break;
+                        case 18:letra='eighteen';  break;
+                        case 19:letra='nineteen'; break;
+                        case 20:letra='twenty'; break;     
+                    }
+                     return letra;            
+                }   
+        </script>
+        <br>
+        <hr size="5" color="violet">
+        <h2 style="color:black;">Elaborado por: Yeimer Antonio Romero Garcia <br> (grupo D)</h2>
+    </center>
+    
+</body>
+</html>

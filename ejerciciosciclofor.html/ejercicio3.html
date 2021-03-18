@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <body>
+        <title>EJERCICIO 3</title>
+        <style>
+            body {
+            background: #4ac29a4d;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #bdfff375, #4ac29a4d);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #bdfff350, #4ac29a54),url(imagen/logo\ \(2\).jpeg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-position: right;
+                font-size: 15px;
+                font-style:hidden;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            table{
+                background-color: white;
+            }
+        </style>
+
+   <center>
+    <h1>USO CICLO WHILE<br>ESTRUCTURAS REPETITIVAS</h1>
+    <hr size="5" color="green">
+    <br>
+    <table border="5">
+    <th>CANTIDAD DE DATOS NUMERICOS INGRESADOS</th>
+    <tbody id="cuerpo"></tbody>
+    </table>
+<br>
+    <table border="">
+    <th><center>FUNCIONES A REALIZAR</center></th>
+    <tr><td><label>Cantidad de números digitados:</label> <label id="cantidad"></label></td><tr>
+    <td><label>Suma de los números:</label> <label id="suma"></label></td><tr>
+    <tr><td><label>promedio:</label> <label id="promedio"></label></td><tr>
+    </table>
+        </center>
+        
+        <script>
+            var salida = '';
+            var promedio = 0;
+            var cont = 0;
+            var suma = 0;
+            var num = parseInt(prompt("Digite números, use 0 para finalizar", ""));
+            while (num != 0) {
+                salida += '<tr><td>' + num + '</td></tr>';
+                cont++;
+                suma = suma + num;
+                var num = parseInt(prompt("Digite números, use 0 para finalizar", ""));
+            }
+            promedio = suma / cont;
+            document.getElementById("cuerpo").innerHTML = salida;
+            document.getElementById("cantidad").innerHTML = cont;
+            document.getElementById("suma").innerHTML = suma;
+            document.getElementById("promedio").innerHTML = promedio;
+        </script>
+        <br>
+        <hr size="5" color="violet">
+        <center><h2 style="color: black;">Elaborado por: Yeimer Antonio Romero Garcia <br> (grupo D)</h2></center>
+    </body>
+</head>
+
+</html>

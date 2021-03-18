@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 4</title>
+    <style>
+        body {
+            background: #4ac29a4d;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #bdfff375, #4ac29a4d);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #bdfff350, #4ac29a54),url(imagen/logo\ \(2\).jpeg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-position: right;
+            font-style: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            background-color: white;
+            border:black;
+        }
+        h2{
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CAPTURA DE NOMBRE CON EL CICLO WHILE</h1>
+        <hr size="5" color="violet">
+        <br>
+        <table border="10">
+            <h2>TABLA DE NOTAS DE LOS ESTUDIANTES</h2>
+          <th>NOMBRES DEL ESTUDIANTE</th><th>APELLIDOS DEL ESTUDIANTE</th><th>NOTA 1</th><th>NOTA 2</th><th>NOTA 3</th><th>NOTA FINAL PROMEDIO</th>
+            <tbody id="cuerpo">
+            </tbody>
+        </table>
+    </center>
+    <center>
+   <script>
+       var salida='';
+       aumento=1;
+       valor=prompt("NOMBRES DEL ESTUDIANTE","");
+       valor1=prompt("APELLIDOS DEL ESTUDIANTE","");
+       valor2=prompt("INGRESE LA NOTA 1","");
+       valor3=prompt("INGRESE LA NOTA 2","");
+       valor4=prompt("INGRESE LA NOTA 3","");
+       prom1=parseInt(valor2)+parseInt(valor3)+parseInt(valor4);
+       promedio2=parseInt(prom1)/ 3;
+while(aumento=0){
+           aumento++   
+       }
+       salida+='<tr><td>'+valor+'</td><td>'+valor1+'</td><td>'+valor2+'</td><td>'+valor3+'</td><td>'+valor4+'</td><td>'+promedio2+'</td></tr>';
+       nombre=prompt("DIGITE SERIES DE NOMBRES O ENTER PARA TERMINAR","");
+       document.getElementById('cuerpo').innerHTML=salida;
+       
+   </script>
+   <br>
+   <hr size="5" color="violet">
+   <h2 style="color: black;">Elaborado por: Yeimer Antonio Romero Garcia <br> (grupo D)</h2>
+</center>
+</body>
+</html>

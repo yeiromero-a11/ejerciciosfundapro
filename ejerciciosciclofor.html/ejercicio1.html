@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <center><h1 style="color: black;">EJERCICIO 1 CICLO FOR <br> ESTRUCTURAS REPETITIVAS</h1></center>
+    </head>
+    <hr size="5" color="violet">
+    <body>
+    <center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICiO 1</title>
+    <style>
+        body{
+            background: #4ac29a4d;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #bdfff375, #4ac29a4d);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #bdfff350, #4ac29a54),url(imagen/logo\ \(2\).jpeg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-position: right;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: hidden;
+            height: 800px;
+        }
+        table{
+            background-color: white;
+        }
+    </style>
+    <br>
+    <label style="color:black;"><b>DIGITAR NÚMERO</b></label>
+    <input type="number" id="num">
+    <button onclick="calcular()">Calcular</button>
+
+    <table border="">
+    <br>
+    <br>
+    <th style="color:black;"><b>CANTIDAD DE NÚMEROS INGRESADOS</b></th>
+    <tbody id="cuerpo1"></tbody>
+    </table>
+
+</center>
+    <br>
+    <center><table border="2">
+    <h2 style="color:black;">FUNCIONES A REALIZAR</h2>
+    <th style="color:black;"><b>SUMA</b></th> 
+    <th style="color:black;"><b>PARES</b></th> 
+    <th style="color:black;"><b>IMPARES</b></th> 
+    <th style="color:black;"><b>MÚLTIPLOS DE CINCO</b></th>
+        <tbody id="cuerpo2"></tbody>
+    </table>
+</center>
+
+<center>
+    <script>
+    function calcular(){
+    var salida1='';
+    var salida2='';
+    var suma = 0;
+    var par = 0;
+    var multi5= 0;
+    var numero='';
+    var num = document.getElementById("num").value;
+    for(var i=1; i<=num; i++)
+    {
+        if(i<num)
+        numero+=i+", ";
+        else 
+        numero+=i;
+        suma+=i;
+        if(i%2==0)
+        par += 1;
+        if(i%5==0) 
+        multi5+=1;
+    }
+        salida1+='<tr><td>'+numero+'.</td></tr>';
+        salida2+='<tr><td>'+suma+'</td><td>'+par+'</td><td>'+(num-par)+'</td><td>'+multi5+'</td></tr>';
+
+        document.getElementById("cuerpo1").innerHTML=salida1;
+        document.getElementById("cuerpo2").innerHTML=salida2;
+    }
+        </script>
+         <br>
+         <hr size="5" color="violet">
+         <h2 style="color: black;">Elaborado por: Yeimer Antonio Romero Garcia <br> (grupo D)</h2>
+        </center>
+        </body>
+</html>
