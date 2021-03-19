@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Manejo Objetos</title>
+
+<!--ESTILOS DEL CUERPO Y DE LAS TABLAS-->
+    <style>
+        body{
+            background-color: bisque;
+            color: black;
+            font-size: 20px;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 900px;
+        }
+        table{
+            border-radius: 10px;
+            background-color: white;
+            border-color: darkmagenta;
+        }
+        .boton1{
+            border-radius: 10px;
+            background-color: darkmagenta;
+            color: white;
+            height: 30px;  
+        }
+        th{
+            border-radius: 8px;
+        }
+        td{
+          border-radius: 8px;
+        }
+        input{
+            border-radius: 8px;
+            height: 20px;
+        }
+        select{
+            border-radius: 8px;
+            background-color: rebeccapurple;
+            color: white;
+        }
+       </style>
+       </head> 
+       <body>
+<!--INICIO DE LA TABLA-->
+    <center>
+        <h1>DATOS PERSONALES</h1>
+        <hr size="5" color="red">
+        <br>
+
+<!--TABLA DE INGRESO DE DATOS PERSONALES-->
+        <table border="5" style="color: darkmagenta;">
+            <th>DESCRIPCION</th><th>DATOS</th>
+            <tbody>
+            <tr><td><b>NOMBRES</b></td><td><input type="text" name="nom" id="nom" placeholder="ingrear nombres" autofocus></td></tr>
+            <tr><td><b>APELLIDOS</b></td><td><input type="text" name="ape" id="ape placeholderingresar apellidos" autofocus></td></tr>
+            <tr><td><b>CEDULA</b></td><td><input type="text" name="ced" id="ced" placeholder="ingresar cedula" autofocus></td></tr>
+            <tr><td><b>EDAD</b></td><td><input type="text" name="edad" id="edad" placeholder="ingresar edad" autofocus></td></tr>
+            <br>
+            </tbody>
+        </table>
+
+<!--BOTON DE GUARDAR LOS DATOS PERSONALES-->
+        <br>
+        <tr><td><button class="boton1" onclick="guardardatos()"><b>GUARDAR DATOS</b></td></button></tr>
+        <br>
+        <h3>Listado de datos personales</h3>
+        <br>
+
+<!--TABLA DONDE SE GUARDAN LOS DATOS PERSONALES-->
+        <table border="5" style="color:darkmagenta;">
+            <th>NOMBRES</th><th>APELLIDOS</th><th>CEDULA</th><th>EDAD</th>
+            <tbody id="cuerpo"></tbody>
+        </table>
+
+<!--INICIO DE SCRIPT-->
+    </center>
+    <script src="ACTIVIDAD1.js"></script>
+    
+</body>
+</html>
