@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Objetos</title>
+
+<!---inicio de estilos del cuerpo-->
+    <style>
+        body{
+            background: #4ac29a4d;  
+            background: -webkit-linear-gradient(to right, #bdfff375, #4ac29a4d); 
+            background: linear-gradient(to right, #bdfff350, #4ac29a54),url(imagen/logo\ \(2\).jpeg);;
+            background-position: right;
+            color: black;
+            font-size: 18px;
+            font-style: italic;
+            font-family: cursive;
+        }
+        hr{
+            background-color: crimson;
+        }
+        table{
+            background-color: white;
+            border-color: purple;
+            border-radius: 8px;
+        }
+        button{
+            height: 30px;
+            background-color: orangered;
+            border-radius: 10px;
+            color: white;
+        }
+        th{
+            border-radius: 8px;
+            height: 20px;
+            background-color:rgba(153, 50, 204, 0.466);
+        }
+        td{
+            border-radius: 8px;
+            height: 20px;
+            background-color:rgba(255, 68, 0, 0.459) ;
+        }
+        input{
+            border-radius: 8px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Manejo de objetos con array 2</h1>
+        <hr size="5">
+        <br>
+<!--tabla 1 de agregar valores-->
+    <table border="5">
+    <th>DESCRIPCIÓN</th><th>DATOS</th>
+    <tbody>
+    <tr><td>NOMBRES</td><td><input type="text" name="nom" id="nom" placeholder= "Digite sus Nombres"></td></tr>
+    <tr><td>APELLIDOS</td><td><input type="text" name="ape" id="ape" placeholder="Digite sus Apellidos"></td></tr>
+    <tr><td>CÉDULA</td><td><input type="text" name="ced" id="ced" placeholder="Digite su cedula"></td></tr>
+    <tr><td>NOTA 1</td><td><input type="text" name="n1" id="n1" placeholder="Digite sus Nota 1"></td></tr>
+    <tr><td>NOTA 2</td><td><input type="text" name="n2" id="n2" placeholder="Digite sus Nota 2"></td></tr>
+    <tr><td>NOTA 3</td><td><input type="text" name="n3" id="n3" placeholder="Digite sus Nota 3"></td></tr>
+    </tbody>
+    </table>
+    <br>
+<!--boton de guardar-->
+    <button onclick="guardar()"><b>Guardar datos</b></button>
+        <br>
+        <h2>Listado de Estudiantes</h2>
+        <br>
+        <table border="5">
+            <th>NOMBRES</th><th>APELLIDOS</th><th>CÉDUULA</th><th>NOTA 1</th><th>NOTA 2</th><th>NOTA 3</th><th>NOTA FINAL</th><th>VALORACIÓN</th><th>APROBADO/REPROBADO</th>
+            <tbody id="cuerpo"></tbody>
+        </table>
+        <br>
+        <hr size="5">
+    </center>
+<!---inicion de script-->
+    <script src="estudiantes.js"></script>
+
+<!--DATOS PERSONALES-->
+<h3>Elaborado por: Yeimer A ntonio Romero García <br> (Grupo D) </h3>
+</body>
+</html>
