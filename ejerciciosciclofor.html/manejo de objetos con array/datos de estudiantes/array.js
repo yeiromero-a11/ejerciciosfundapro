@@ -16,6 +16,7 @@ function listarNumero(){
         salida+='<tr><td>'+myArrayNumeros[pos]+'</td></tr>';
         console.log(salida);
     }
+    document.getElementById('cuerpo').innerHTML=salida;
 }
 /* funcion de operaciones*/
 function operaciones(){
